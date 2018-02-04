@@ -24,4 +24,5 @@ public interface Pedidable {
     public Object cargarObjetoDeListado(int posicion,ArrayList listado);
     public TableModel mostrarArrayEnTabla(ArrayList listado);
     public Object convertirEnFactura(Object pedid);
+    public Boolean instalarActualizar();
 }

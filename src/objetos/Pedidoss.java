@@ -15,7 +15,7 @@ import javax.swing.table.TableModel;
  *
  * @author mauro
  */
-public class Pedidos implements Pedidable{
+public class Pedidoss implements Pedidable{
     private Integer id;
     private Integer idCliente;
     private String nombreCliente;
@@ -128,7 +128,7 @@ public class Pedidos implements Pedidable{
     
     
     
-    public Pedidos(Boolean instalar) {
+    public Pedidoss(Boolean instalar) {
         if(instalar){
             String sql="CREATE TABLE pedidos (\n" +
 "  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,\n" +
@@ -149,7 +149,7 @@ public class Pedidos implements Pedidable{
         }
     }
 
-    public Pedidos() {
+    public Pedidoss() {
     }
 
     @Override
@@ -199,6 +199,11 @@ public class Pedidos implements Pedidable{
 
     @Override
     public Object convertirEnFactura(Object pedid) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Boolean instalarActualizar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

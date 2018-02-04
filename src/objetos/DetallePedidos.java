@@ -9,7 +9,7 @@ package objetos;
  *
  * @author mauro
  */
-public class DetallePedidos extends Pedidos{
+public class DetallePedidos extends Pedidoss{
     private Double cantidad;
     private Integer idArticulo;
     private String descripcionArticulo;
